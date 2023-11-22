@@ -6,7 +6,7 @@
   [Folder setup]
  2.How to create the routing inside the nexts js => go to App create a folter Test init create page.tsx =>now 
  its time for test go to the url and click on the /test its going work(now  the way routeing works on the app folder)
-   "Every folder that we createnin the App folder that will reflect to url"
+   "Every folder that we create in the App folder that will reflect to url"
  now the question is? => how to create a folder that doesn't  reflect to url => this can be done by Route groups
  "By giving special convention (folder name) OR [[...folder name]]"
   the same way we can use for the layout 
@@ -37,13 +37,7 @@
     13.create a new searchbar component ->import an icon from lucid& input component from shadcn react and add inpuit tag with basuic tailwind init
     14.place this component in the rootpage ->app/root/routes->page.tsx(it is a server component)
     15. [debounceing]
-      create a new hook -> use-debounce using settimeout of 500 milli seconds
-     
- 
-
-
-
-
+      create a new hook -> use-debounce using settimeout of 500 milli seconds which internally uses  usestete for updating the value and useeffect for that 500 ms timeout
 
 
  [category ]
@@ -54,3 +48,7 @@
  ->npx prisma db push -> by doing this we will add this new model to planet scale)
  22.now create a new folder on the root level @script and create  seed.ts(here we're using require instead of import because it's not a react/nextjs thimg its purly node thing)
  23.now you can see the categories in the database i.e in prisma studio now we need to acess the categories in the project for acheving this we need to open app/routes/root ->page.tsx (its a server component so we can access our categories here)
+
+
+ [ create+]
+ => in order create a  custom category we need to create a new model  companion schema in schema.prisma

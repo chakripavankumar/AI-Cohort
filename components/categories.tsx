@@ -1,11 +1,12 @@
 "use client";
 import qs from "query-string"
 import { cn } from "@/lib/utils";
-import { category } from "prisma/prisma-client"
+
 import {useRouter,useSearchParams} from "next/navigation"
+import { Category } from "@prisma/client";
 
 interface categoriesProps{
-    data:category[];
+    data: Category[];
 }
 export const Categories = ({
     data
